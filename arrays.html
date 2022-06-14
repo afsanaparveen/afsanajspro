@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            arrays in javascript
+        </title>
+    </head>
+    <body bgcolor="violet">
+       <h1>arrays in javascript</h1>
+       <p>arrays are used to store more than one values in a variable</p>
+       <h1>array can be created in three ways</h1>
+       <p>by array literal</p>
+       <script>
+        var a=[0,1,2,3,4];
+        for(i=0; i<a.length; i++)
+        {
+            document.write(a[i] +"<br/>" );
+        }
+       </script>
+       <p>second way which is by new keyword</p>
+    
+       <script>
+        var i=0;
+        var stud=new Array();
+        stud[0]=0;
+        stud[1]=1;
+        stud[2]=2;
+        while(i<stud.length){
+            document.write(stud[i] +"<br/>" );
+            i++;
+        }
+
+       </script> 
+       <p>by using array constructor</p>
+       <script>
+        var b=new Array(0,1,2,3,4,5);
+        for(i=0;i<b.length;i++)
+        {
+            document.write(b[i] +"<br/>" );
+        }
+       </script>
+    </body>
+</html>
