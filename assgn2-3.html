@@ -1,0 +1,35 @@
+<html>
+    <body>
+        
+            
+        <script>
+        var i=0;
+        var stud=new Array();
+        stud[0]=3;
+        stud[1]=6;
+        stud[2]=5;
+        stud[3]="undefined";     
+    stud[9]=44;
+        
+        delete stud[0];  //by this element will be deleted but space wil be there
+        
+        document.write(stud.length +"<br/>");  //here length is 11
+        stud.shift();    //by this the space is removed
+        function lengthofarray(stud)
+        {
+            return stud.length;
+        }
+        document.write(stud.length +"<br/>");  //here length is 10
+        for(i in stud){
+        if(stud.hasOwnProperty(i)){
+            document.write(i +"<br/>");
+        }
+    }
+        </script>
+        
+        
+            
+
+        
+    </body>
+</html>
