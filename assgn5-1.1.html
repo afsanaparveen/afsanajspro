@@ -1,0 +1,28 @@
+
+
+<html>
+<head>
+    <title>SLIDESHOW</title>
+<script>
+
+window.onload = function() {
+    var image=document.getElementById("aaa");
+    var img_array=["image1.jpg","image2.jpg","image3.jpg" ];
+    var index=0;
+    var interval = 3000;
+    function slide() {
+        image.src = img_array[index++%img_array.length];
+    }
+
+    setInterval(slide, interval);
+}
+</script>
+</head>
+<body>
+    <h1 align = "center"> FLOWERS </h1>
+    <img style = "  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;" id="aaa" src="image1.jpg" width="500" height="500" name="image" />
+    </body>
+    </html> 
